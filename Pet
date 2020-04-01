@@ -1,0 +1,10 @@
+#include <stdio.h>
+void  main()
+{
+  char name[]="PUSSY";
+  int age=2;
+  printf(" %s",&name);
+  printf("\n %d",age);
+ 
+  
+}
