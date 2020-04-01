@@ -1,0 +1,10 @@
+#include <stdio.h>
+void  main()
+{
+  char name[]="SNEHA SUSAN SAJI";
+  char school []="MAR THOMA RESIDENTIAL SCHOOL";
+  int age=18,class=12,marks=90;
+  printf("\nThe details of %s of %s is",name, school);
+  printf("\n age - %d\n class - %d\n marks - %d",age,class, marks);
+  
+}
