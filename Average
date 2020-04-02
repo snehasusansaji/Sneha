@@ -1,0 +1,18 @@
+#include <stdio.h>
+void main()
+{
+  char name[15];
+  int i,sub,marks,sum=0;
+  printf("Enter your name");
+  scanf("%s",&name);
+  printf("Enter number of subjects");
+  scanf("%d",&sub);
+  for(i=1;i<=sub;i++)
+  {
+    printf("Enter marks");
+    scanf("%d",&marks);
+    sum=sum+marks;
+  }
+  printf("Average marks = %d ",sum/sub);
+  
+}
