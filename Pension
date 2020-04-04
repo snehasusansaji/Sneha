@@ -1,0 +1,14 @@
+#include <stdio.h>
+void main()
+{
+  int age,p;
+  printf("Enter your age");
+  scanf("%d",&age);
+  if(age>=60)
+  p=10000;
+  else if(age<=60&&age>=50)
+  p=5000;
+  else
+  p=0;
+  printf("Your pension is %d",p);
+}
