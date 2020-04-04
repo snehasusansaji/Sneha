@@ -3,7 +3,7 @@ void main()
 {
  int choice;
   printf("Enter your choice");
-  scanf("%d",choice);
+  scanf("%d",&choice);
   switch (choice)
     {
     case 1:
