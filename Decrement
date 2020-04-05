@@ -1,0 +1,11 @@
+#include <stdio.h>
+void main()
+{
+  int num;
+  printf("Enter a number");
+  scanf("%d",&num);
+  do{
+    num--;
+    printf("%d\n",num);
+  }while(num>0);
+}
