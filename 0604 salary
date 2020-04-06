@@ -1,0 +1,11 @@
+#include <stdio.h>
+void main()
+{
+  float basic,da,ta,net;
+  printf("Enter your basic salary");
+  scanf("%f",&basic);
+  da=.10*basic;
+  ta=.12*basic;
+  net=da+ta+basic;
+  printf("Your salary for this month is %f",net);
+}
