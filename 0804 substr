@@ -1,0 +1,16 @@
+#include <stdio.h>
+void main()
+{
+  char str[5],sub[5];
+  int pos,len,i;
+  printf("Enter the string\n");
+  scanf("%s",&str);
+  printf("Enter the position and lenght of the substring\n");
+  scanf("%d%d",&pos,&len);
+  while(i<len)
+  {
+    sub[i]=str[pos+i-1];
+    i++;
+  }
+  printf("The substring is %s",sub);
+}
