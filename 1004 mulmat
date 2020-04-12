@@ -1,0 +1,47 @@
+#include <stdio.h>
+void main()
+{
+  int i,j,k,r1,r2,c1,c2,mat1[5][5],mat2[5][5],mul[5][5];
+  printf("Enter the row and column of the first matrix\n");
+  scanf("%d",&r1,&c1);
+  printf("Enter the row and column of the second matrix\n");
+  scanf("%d",&r2,&c2);
+  scanf("%d",&r2,&c2);
+  printf("Enter the first matrix\n");
+  for(i=0;i<r1;i++)
+   {
+     for(j=0;j<c1;j++)
+     {
+   scanf("%d",&mat1[i][j]);
+     }
+   }
+   printf("Enter the second matrix\n");
+  for(i=0;i<r2;i++)
+   {
+     for(j=0;j<c2;j++)
+     {
+   scanf("%d",&mat2[i][j]);
+     }
+   if(c1==r2)
+   {
+  for(i=0;i<c2;i++)
+   {
+     for(j=0;j<r1;j++)
+     {
+       mul[j][i]= 0;
+       for(k=0;k<c1;k++)
+       {
+       mul[i][j]=mul[j][i]+(mat1[j][k]*mat2[k][i]);
+       }
+     }
+   }
+  }
+}
+for(i=0;i<c2;i++)
+   {
+     for(j=0;j<r1;j++)
+     {
+   printf("%d",&mul[i][j]);
+     }
+   }
+}
