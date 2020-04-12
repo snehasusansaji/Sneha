@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>
+void main()
+{
+  int num,num1,num2,digit,p=0,sum=0;
+  printf("Enter the number");
+ scanf("%d",&num) ;
+ num1=num;
+ num2=num;
+ while(num>0)
+ {
+   p++;
+   num/=10;
+ }
+ while(num1>0)
+ {
+   digit=num1%10;
+   sum+=pow(digit,p);
+   num1/=10;
+ }
+ if(num2==sum)
+ {
+ printf("Amstrong");
+ }
+ else
+ {
+ printf("Not Amstrong");
+ }
+ 
+}
