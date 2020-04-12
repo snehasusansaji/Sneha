@@ -1,16 +1,14 @@
 #include <stdio.h>
+void prime(int,int);
 void main()
 {
   int i,num,flag=0;
   printf("Enter the number");
   scanf("%d",&num);
- prime();
- if(flag==0)
-   printf("Prime number");
- else
-   printf("Not a Prime number");
+ prime(num,flag);
+ 
 }
-int prime(int num,int flag)
+void prime(int num,int flag)
 {
   int i;
   for(i=2;i<=num-1;i++)
@@ -18,10 +16,13 @@ int prime(int num,int flag)
     if(num%i==0)
     {
       flag=1;
-      return flag;
-      break;
+      break;      
     }
   }
+  if(flag==0)
+   printf("Prime number");
+ else
+   printf("Not a Prime number");
 }
 
 
