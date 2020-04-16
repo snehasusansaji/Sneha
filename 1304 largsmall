@@ -1,0 +1,44 @@
+#include <stdio.h>
+#include <string.h>
+void large(int l,char str[5][5],char larg[], int count)
+{
+  int i;
+    if(l<count)
+    {
+      l=count;
+      for(i=0;i<l;i++)
+     larg[i]=str[i];
+     }
+     for(i=0;i<l;i++)
+ printf("The largest word in the sentence is %c lenght %d  ",larg[i],l);
+}
+void small(int s, int count, char str[5][5],char smll[])
+{
+  int i;
+    if(s>count)
+    {
+      s=count;
+      for(i=0;i<s;i++)
+     smll[i]=str[i];
+     }
+     for(i=0;i<s;i++)
+ printf("The smallest word in the sentence is %c lenght %d  ",smll[i],s);
+}
+void main()
+{
+  char str[10][10]={0},larg[5],smll[5];
+  int count=0,l=0,s=0,i;
+  printf("ENTER THE SENTENCE \n");
+  gets(str);
+  while(str!=' '&&str!='\0')
+  {
+    l=count;
+    s=count;
+    count++;
+      
+    }
+     
+    large(l,count,str,larg);
+    small(s,count,str,small);
+ }
+ 
