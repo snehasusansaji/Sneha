@@ -1,0 +1,23 @@
+#include <stdio.h>
+void main()
+{
+  int mat[5][5],i,j;
+  printf("Enter the matrix\n");
+  for(i=0;i<5;i++)
+  {
+   for(j=1;j<5;j++)
+   {
+     scanf("%d",&mat[i][j]);
+    }
+  }
+  for(i=0;i<5;i++)
+  {
+   for(j=1;j<5;j++)
+   {
+     if(i==j&&mat[i][j]==1)
+     printf("It is an ldentity matrix");
+     else
+     printf("It is not an ldentity matrix");
+    }
+  }
+}
