@@ -1,0 +1,28 @@
+#include <stdio.h>
+void main()
+{ int r,c,mat[5][5],mat1[5][5],i,j;
+
+  printf("Enter the number of rows of the matrix\n");
+  scanf("%d",&r) ;
+  printf("Enter the number of columns of the matrix\n");
+  scanf("%d",&c) ;
+  for(i=0;i<r;i++)
+  {
+    for(j=0;j<c;j++)
+    {
+      if(i==j)
+      mat1[i][j]=1;
+      else
+      mat1[i][j]=0;
+     }
+  }
+  printf("Identity matrix of order (%d x %d) is \n",r,c);
+  for(i=0;i<r;i++)
+  {
+    for(j=0;j<c;j++)
+    {
+      printf("%d",mat1[i][j]);  
+    }
+    printf("\n");
+  }
+}
