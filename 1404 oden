@@ -1,0 +1,32 @@
+#include <stdio.h>
+void main()
+{ 
+  int mat[2][2],i,j,e=0,o=0;
+  printf("Enter the matrix\n");
+  for(i=0;i<2;i++)
+  {
+   for(j=1;j<2;j++)
+   {
+     scanf("%d",&mat[i][j]);
+     scanf("%d",&mat[i][j]);
+    }
+  }
+  for(i=0;i<2;i++)
+  {
+   for(j=0;j<2;j++)
+   {
+     if(mat[i][j]%2==0)
+     {
+     e++;
+     printf("\nThe element at A%d%d is even ",i+1,j+1);
+      }
+      else
+      {
+       o++;
+    printf("\nThe element at A%d%d is odd ",i+1,j+1);
+      }
+    }
+  }
+  printf("\nFrequency of even is %d",e);
+  printf("\nFrequency of odd is %d",o);
+}
